@@ -52,9 +52,7 @@ ifneq ($(strip $(BOARD_MESA3D_GALLIUM_DRIVERS)),)
 AOSPEXT_GEN_TARGETS += \
     lib:libgallium_dri.so:dri:libgallium_dri:   \
     lib:libglapi.so::libglapi:                  \
-    lib:libEGL.so:egl:libEGL_mesa:              \
-    lib:libGLESv1_CM.so:egl:libGLESv1_CM_mesa:  \
-    lib:libGLESv2.so:egl:libGLESv2_mesa:        \
+    lib:libEGL.so:egl:libGLES_mesa:             \
 
 endif
 
